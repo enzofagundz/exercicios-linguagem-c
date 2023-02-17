@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-18 02:07:32 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjAxOjQ2OjA2ICI7MjcyNA=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjAyOjA3OjMyICI7MTsyODI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="R" type="Real" array="False" size=""/>
+            <declare name="conv" type="Real" array="False" size=""/>
+            <output expression="&quot;Pre&#231;o do produto R$&quot;" newline="True"/>
+            <input variable="R"/>
+            <if expression="R=0">
+                <then>
+                    <output expression="&quot;O valor n&#227;o pode ser 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="R&lt;0">
+                        <then>
+                            <output expression="&quot;O valor descrito &#233; inv&#225;lido&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="conv" expression="R*(0.188)"/>
+                            <output expression="(&quot;O pre&#231;o do seu produto em d&#243;lares &#233; equivalente &#224; U$&quot;) &amp; conv" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

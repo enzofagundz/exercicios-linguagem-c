@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-18 02:59:50 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjAyOjE3OjM5ICI7MjcyOQ=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjAyOjU5OjUwICI7MTsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VH" type="Integer" array="False" size=""/>
+            <declare name="HT" type="Integer" array="False" size=""/>
+            <declare name="SB" type="Integer" array="False" size=""/>
+            <declare name="PD" type="Integer" array="False" size=""/>
+            <declare name="TD" type="Integer" array="False" size=""/>
+            <declare name="SL" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual o valor da hora aula em sua institui&#231;&#227;o? R$&quot;" newline="True"/>
+            <input variable="VH"/>
+            <output expression="&quot;Quantas horas voc&#234; trabalhou no m&#234;s?&quot;" newline="True"/>
+            <input variable="HT"/>
+            <output expression="&quot;Qual o percentual de desconto do INSS?&quot;" newline="True"/>
+            <input variable="PD"/>
+            <assign variable="SB" expression="HT*VH"/>
+            <assign variable="TD" expression="(PD/100) * SB"/>
+            <assign variable="SL" expression="SB - TD"/>
+            <output expression="&quot;O seu sal&#225;rio bruto &#233; equivalente a &quot; &amp; SB" newline="True"/>
+            <output expression="&quot;Conforme a al&#237;quota de &quot; &amp; PD &amp; &quot;% informada. &quot;" newline="False"/>
+            <output expression="&quot;O seu sal&#225;rio l&#237;quido &#233; equivalente a R$&quot; &amp; SL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

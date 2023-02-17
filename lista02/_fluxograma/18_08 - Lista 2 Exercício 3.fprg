@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-18 11:33:52 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjExOjIwOjAyICI7MjcxMw=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjExOjMzOjUyICI7MzsyODMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro numero&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1 = n2">
+                <then>
+                    <output expression="&quot;N&#250;meros iguais&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n1 &gt; n2">
+                        <then>
+                            <output expression="(&quot;Maior = &quot; &amp; n1) &amp; (&quot; e menor = &quot; &amp; (n2))" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="(&quot;Maior = &quot; &amp; n2) &amp; (&quot; e menor = &quot; &amp; (n1))" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

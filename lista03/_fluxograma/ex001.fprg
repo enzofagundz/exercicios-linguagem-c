@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-08 10:58:31 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDktMDg7IjEwOjM5OjA4ICI7MjcyOA=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDktMDg7IjEwOjU4OjMxICI7MTsyODMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="h" type="Real" array="False" size=""/>
+            <declare name="r" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu peso&quot;" newline="True"/>
+            <input variable="p"/>
+            <output expression="&quot;Digite a sua altura&quot;" newline="True"/>
+            <input variable="h"/>
+            <assign variable="r" expression="p / (h*h)"/>
+            <if expression="r &lt; 18.5">
+                <then>
+                    <output expression="&quot;Abaixo do peso ideal&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="r = 18.5 || r &lt; 24.9">
+                        <then>
+                            <output expression="&quot;Peso normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="r = 25.0 || r &lt; 29.9">
+                                <then>
+                                    <output expression="&quot;Acima do seu peso (sobrepeso)&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="r = 30 || r &lt; 34.9">
+                                        <then>
+                                            <output expression="&quot;Obesidade grau I&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="r = 35 || r &lt; 39.9">
+                                                <then>
+                                                    <output expression="&quot;Obesidade grau II&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="r &gt;= 40">
+                                                        <then>
+                                                            <output expression="&quot;Obesidade grau III&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

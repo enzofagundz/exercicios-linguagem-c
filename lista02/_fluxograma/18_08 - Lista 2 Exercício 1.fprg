@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-18 11:08:19 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjExOjAwOjA1ICI7MjcxNA=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjExOjA4OjE5ICI7MTsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="RESULT" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;Escreva o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="B"/>
+            <assign variable="RESULT" expression="A+B"/>
+            <output expression="&quot;Soma = &quot; &amp; RESULT" newline="True"/>
+            <assign variable="RESULT" expression="A - B"/>
+            <output expression="&quot;Subtra&#231;&#227;o = &quot; &amp; RESULT" newline="True"/>
+            <assign variable="RESULT" expression="A*B"/>
+            <output expression="&quot;Multiplica&#231;&#227;o = &quot; &amp; A*B" newline="True"/>
+            <if expression="B = 0">
+                <then>
+                    <output expression="&quot;Imposs&#237;vel realizar a divis&#227;o&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="RESULT" expression="A/B"/>
+                    <output expression="&quot;Divis&#227;o = &quot; &amp; RESULT" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

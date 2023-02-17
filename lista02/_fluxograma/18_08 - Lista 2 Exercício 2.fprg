@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-18 11:39:48 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjExOjM1OjA4ICI7MjcyNQ=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDgtMTg7IjExOjM5OjQ4ICI7MTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero&quot;" newline="True"/>
+            <input variable="n1"/>
+            <assign variable="result" expression="n1*n1"/>
+            <output expression="(((&quot;O quadrado no n&#250;mero &quot;) &amp; (n1) &amp; (&quot; &#233; igual a &quot;) &amp; (result)))" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

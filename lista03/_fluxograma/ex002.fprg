@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-08 11:10:09 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDktMDg7IjExOjAzOjI1ICI7MjcxOQ=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDktMDg7IjExOjEwOjA5ICI7MTsyODI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um valor&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite outro valor&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Digite um terceiro valor&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Digite um quarto valor&quot;" newline="True"/>
+            <input variable="d"/>
+            <if expression="a &gt; b || a &gt; c || a &gt; d">
+                <then>
+                    <output expression="&quot;O valor A &#233; o maior dos quatro&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="b &gt; a || b &gt; c || b &gt; d">
+                <then>
+                    <output expression="&quot;O valor B &#233; o maior dos quatro&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="c &gt; a || c &gt; b || c &gt; d">
+                <then>
+                    <output expression="&quot;O valor C &#233; o maior dos quatro&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="d &gt; a || d &gt; b || d &gt; c">
+                <then>
+                    <output expression="&quot;O valor D &#233; o maior dos quatro&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ejvf3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-08 01:04:35 "/>
+        <attribute name="created" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDktMDg7IjEyOjM5OjAyICI7MjcyNA=="/>
+        <attribute name="edited" value="ZWp2ZjM7REVTS1RPUC1FRVJGMzZKOzIwMjEtMDktMDg7IjAxOjA0OjM1ICI7MTsyODI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pag" type="String" array="False" size=""/>
+            <declare name="p" type="Real" array="False" size=""/>
+            <declare name="nv" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o valor do produto R$ &quot;" newline="True"/>
+            <input variable="p"/>
+            <output expression="&quot;Escolha o m&#233;todo de pagamento:&quot;" newline="True"/>
+            <output expression="&quot;A - &#192; vista em dinheiro&quot;" newline="True"/>
+            <output expression="&quot;B - &#192; vista no cart&#227;o&quot;" newline="True"/>
+            <output expression="&quot;C - 2 parcelas&quot;" newline="True"/>
+            <output expression="&quot;D - 3 parcelas&quot;" newline="True"/>
+            <input variable="pag"/>
+            <if expression="pag = (&quot;A&quot;)">
+                <then>
+                    <assign variable="nv" expression="p - (p * 0.1)"/>
+                    <output expression="&quot;&#192; vista em dinheiro voc&#234; ganha um desconto de 10% e, seu produto de R$&quot; &amp; p &amp; &quot; passa a custar R$ &quot; &amp; nv" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pag = (&quot;B&quot;)">
+                        <then>
+                            <assign variable="nv" expression="p - (p * 0.05)"/>
+                            <output expression="&quot;&#192; vista no cart&#227;o voc&#234; ganha um desconto de 5% e, seu produto de R$&quot; &amp; p &amp; &quot; passa a custar R$ &quot; &amp; nv" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pag = (&quot;C&quot;)">
+                                <then>
+                                    <assign variable="nv" expression="p / 2"/>
+                                    <output expression="&quot;Em 2 parcelas, voc&#234; ir&#225; pagar R$&quot; &amp; nv &amp; &quot; em cada parcela&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pag = (&quot;D&quot;)">
+                                        <then>
+                                            <assign variable="nv" expression="(p + (p * 0.1)) / 3"/>
+                                            <output expression="&quot;Em 3 parcelas, voc&#234; paga um juros de 10% sobre o pre&#231;o do produto e o valor de cada parcela se torna R$&quot; &amp; nv" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
